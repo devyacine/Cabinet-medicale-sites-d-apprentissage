@@ -1,0 +1,33 @@
+.nav_haccueil {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap-reverse;
+    -moz-text-decoration-color: slategray;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+img {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 50px
+}
+
+p {}
+
+ss
