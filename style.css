@@ -1,11 +1,28 @@
-.nav_haccueil {
-    display: flex;
-    flex-direction: row-reverse;
-    flex-wrap: wrap-reverse;
-    -moz-text-decoration-color: slategray;
+body {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: minmax(1fr, auto) color: black;
+    background-color: oldlace;
+    grid-template-areas: "header header header header" "main main main main" "main main main main" "main main main main" "footer footer footer footer";
+}
+
+header {
+    grid-area: header;
+    grid-template-columns: 1fr 1fr 2fr
 }
 
 ul {
+    grid-area: ul;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+
+main {
+    grid-area: main;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap-reverse;
@@ -14,10 +31,9 @@ ul {
 }
 
 footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: flex-end;
+    grid-area: footer;
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr
 }
 
 img {
@@ -28,6 +44,10 @@ img {
     width: 50px
 }
 
-p {}
-
-ss
+.pmaps {
+    grid-area: pmaps;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex start;
+    width: 50px;
+}
